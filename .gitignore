@@ -1,0 +1,9 @@
+backend/frontend
+
+backend/.gcloudignore
+backend/__pycache__
+backend/1.0.0
+backend/app.yaml
+backend/run_flask.bat
+backend/chess_nn/ipynb_checkpoints
+backend/chess_nn/__pycache__
