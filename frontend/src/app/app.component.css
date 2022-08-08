@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700&display=swap');
+#chess-board-container {
+    font-family: 'Raleway', sans-serif;
+    background-color: #312e2b;
+}
+
+#main-nav {
+    height: 50px;
+    margin-bottom: 40px;
+}
+#app-container {
+    background-color: #312e2b;
+    min-height: 100vh;
+    margin: 0 auto;
+}

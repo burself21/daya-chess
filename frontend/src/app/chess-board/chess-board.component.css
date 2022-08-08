@@ -1,0 +1,122 @@
+
+#container {
+    display: flex;
+    align-items: center;
+    align-content: space-around;
+    margin: 0 auto;
+    width: 75vw;
+    column-gap: 30px;
+    justify-content: center;
+    flex-direction: row;
+}
+
+#chess-board { 
+    border-spacing: 0;
+    border-collapse: collapse;
+    display: inline;
+}
+#chess-board th { 
+    padding: .5em; 
+    color: white;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+#chess-board td {
+    border: 1px solid; 
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+
+}
+#chess-board .light { 
+    background: #eee; 
+}
+#chess-board .dark {
+    background: #aaa; 
+}
+
+#chess-board .square {
+    text-align: center;
+    position: relative;
+    width: 4.85vw;     
+    height: 4.85vw;
+}
+
+
+#chess-board th {
+    font-size: 1.01vw;      /* 4.8:1 ratio */
+}
+
+:host ::ng-deep .white-piece, :host ::ng-deep .black-piece {
+    font-size: 3vw;       /* 12:7 ratio seems good */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+:host ::ng-deep .has-piece {
+    cursor: pointer;
+}
+
+:host ::ng-deep .highlight-square {
+    visibility: hidden;
+    background-color: yellow;
+    opacity: 0.4;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+:host ::ng-deep .selected .highlight-square {
+    visibility: visible;
+}
+
+#new-game-section {
+    /*position: absolute;
+    top: 20vh;
+    right: 10vw;*/
+    /* margin-top: auto;
+    margin-bottom: auto;*/
+    height: fit-content; 
+    border: 2px solid black;
+    padding: 10px 10px 30px 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: fit-content;
+}
+
+#new-game-section h3 {
+    margin-top: 0;
+}
+
+:host ::ng-deep .modal-content {
+    display: flex;
+    flex-direction: column;
+}
+
+#promotion-modal-origin {
+    position: relative;
+}
+
+#promotion-modal {
+    flex-direction: column;
+    position: absolute;
+    width: 75%;
+    top: 133.33%;
+    left: 12.5%;
+    z-index: 9999;
+}
